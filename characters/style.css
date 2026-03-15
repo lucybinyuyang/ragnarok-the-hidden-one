@@ -37,34 +37,35 @@ body{
 
 .subnav{
     max-width:900px;
-    margin:0 auto 34px auto;
+    margin:0 auto 28px auto;
     text-align:center;
-    padding-bottom:12px;
-    border-bottom:1px solid rgba(255,255,255,0.12);
 }
 
 .subnav a{
     display:inline-block;
-    margin:0 14px;
-    padding:4px 2px;
-    color:rgba(230,230,230,0.72);
+    margin:6px 6px;
+    padding:6px 16px;
+    color:rgba(230,230,230,0.82);
     text-decoration:none;
-    background:none;
-    border-radius:0;
-    border-bottom:1px solid transparent;
+    background:rgba(255,255,255,0.04);
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,0.12);
     transition:0.2s ease;
-    font-size:16px;
+    font-size:15px;
     letter-spacing:1px;
 }
 
 .subnav a:hover{
+    background:rgba(255,255,255,0.10);
+    border-color:rgba(255,255,255,0.22);
     color:#ffffff;
-    border-bottom:1px solid rgba(255,255,255,0.45);
 }
 
 .subnav a.active{
-    color:#f1e2b8;
-    border-bottom:1px solid #f1e2b8;
+    background:rgba(255,215,120,0.14);
+    border:1px solid rgba(255,215,120,0.55);
+    color:#ffe8a3;
+    box-shadow:0 0 12px rgba(255,215,120,0.12);
 }
 
 h1{
