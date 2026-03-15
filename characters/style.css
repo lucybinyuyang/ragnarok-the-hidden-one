@@ -37,27 +37,34 @@ body{
 
 .subnav{
     max-width:900px;
-    margin:0 auto 30px auto;
+    margin:0 auto 34px auto;
     text-align:center;
+    padding-bottom:12px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
 }
 
 .subnav a{
     display:inline-block;
-    margin:6px 8px;
-    padding:8px 18px;
-    color:#e6e6e6;
+    margin:0 14px;
+    padding:4px 2px;
+    color:rgba(230,230,230,0.72);
     text-decoration:none;
-    background:rgba(255,255,255,0.08);
-    border-radius:999px;
+    background:none;
+    border-radius:0;
+    border-bottom:1px solid transparent;
     transition:0.2s ease;
+    font-size:16px;
+    letter-spacing:1px;
 }
 
 .subnav a:hover{
-    background:rgba(255,255,255,0.14);
+    color:#ffffff;
+    border-bottom:1px solid rgba(255,255,255,0.45);
 }
 
 .subnav a.active{
-    background:rgba(255,255,255,0.16);
+    color:#f1e2b8;
+    border-bottom:1px solid #f1e2b8;
 }
 
 h1{
