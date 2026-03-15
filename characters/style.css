@@ -270,7 +270,11 @@ p{
 }
 
 .character-art{
-    min-height:460px;
+    min-height:520px;
+}
+
+.character-art img{
+    height:520px;
 }
 
 }
