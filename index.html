@@ -24,12 +24,40 @@ body{
     line-height:1.7;
 }
 
+/* 顶部导航 */
+
+.topnav{
+    max-width:900px;
+    margin:0 auto 30px auto;
+    text-align:center;
+}
+
+.topnav a{
+    display:inline-block;
+    margin:0 10px;
+    padding:10px 22px;
+    color:#e6e6e6;
+    text-decoration:none;
+    background:rgba(255,255,255,0.08);
+    border-radius:999px;
+
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+}
+
+.topnav a.active{
+    background:rgba(255,255,255,0.16);
+}
+
+/* 标题 */
+
 h1{
-    font-family:"Noto Serif SC",serif;
     font-size:60px;
     text-align:center;
     margin-bottom:8px;
 }
+
+/* 副标题 */
 
 .subtitle{
     text-align:center;
@@ -39,14 +67,10 @@ h1{
     font-size:50px;
 }
 
-h2{
-    border-bottom:1px solid #444;
-    padding-bottom:6px;
-    margin-top:40px;
-}
+/* 文字区域 */
 
 .section{
-    max-width:850px;
+    max-width:900px;
     margin:auto;
 
     background:rgba(15,15,20,0.65);
@@ -60,6 +84,12 @@ h2{
     box-shadow:0 0 25px rgba(0,0,0,0.4);
 }
 
+h2{
+    border-bottom:1px solid #444;
+    padding-bottom:6px;
+    margin-top:40px;
+}
+
 .footer{
     margin-top:80px;
     text-align:center;
@@ -71,6 +101,15 @@ h2{
 </head>
 
 <body>
+
+<!-- 主导航 -->
+
+<div class="topnav">
+    <a href="index.html" class="active">首页</a>
+    <a href="characters.html">人物</a>
+</div>
+
+<!-- 标题 -->
 
 <h1>诸神黄昏：未述之章</h1>
 
@@ -109,7 +148,7 @@ Ragnarok: The Hidden One
 
 <p>
 然而，当既定的未来指向无法挽回的结局时，
-命运之神奥法涅尔（Ophaniel）选择亲自下场，
+命运之神奥法涅尔（Ophanel）选择亲自下场，
 干预那条原本早已注定的命运轨迹。
 </p>
 
@@ -130,5 +169,4 @@ Ragnarok: The Hidden One Project
 </div>
 
 </body>
-
 </html>
