@@ -1,0 +1,121 @@
+body{
+    background:
+    linear-gradient(rgba(10,10,15,0.65),rgba(10,10,15,0.65)),
+    url("../images/main-background.webp");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#e6e6e6;
+    font-family:"Noto Serif SC",serif;
+    margin:40px;
+    line-height:1.9;
+}
+
+.topnav{
+    max-width:900px;
+    margin:0 auto 20px auto;
+    text-align:center;
+}
+
+.topnav a{
+    display:inline-block;
+    margin:0 10px;
+    padding:10px 22px;
+    color:#e6e6e6;
+    text-decoration:none;
+    background:rgba(255,255,255,0.08);
+    border-radius:999px;
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+    transition:0.2s ease;
+}
+
+.topnav a:hover{
+    background:rgba(255,255,255,0.16);
+}
+
+.subnav{
+    max-width:900px;
+    margin:0 auto 30px auto;
+    text-align:center;
+}
+
+.subnav a{
+    display:inline-block;
+    margin:6px 8px;
+    padding:8px 18px;
+    color:#e6e6e6;
+    text-decoration:none;
+    background:rgba(255,255,255,0.08);
+    border-radius:999px;
+    transition:0.2s ease;
+}
+
+.subnav a:hover{
+    background:rgba(255,255,255,0.14);
+}
+
+.subnav a.active{
+    background:rgba(255,255,255,0.16);
+}
+
+h1{
+    font-size:60px;
+    text-align:center;
+    margin-bottom:8px;
+    letter-spacing:3px;
+    font-weight:600;
+}
+
+.subtitle{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:40px;
+    font-family:"Bonheur Royale",cursive;
+    font-size:30px;
+    letter-spacing:2px;
+    position:relative;
+}
+
+.subtitle:before,
+.subtitle:after{
+    content:"";
+    display:inline-block;
+    width:120px;
+    height:1px;
+    background:#666;
+    margin:0 15px;
+    vertical-align:middle;
+}
+
+.section{
+    max-width:900px;
+    margin:auto;
+    background:rgba(15,15,20,0.65);
+    padding:40px;
+    border-radius:14px;
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    box-shadow:0 0 25px rgba(0,0,0,0.4);
+    font-size:17px;
+}
+
+h2{
+    border-bottom:1px solid #444;
+    padding-bottom:6px;
+    margin-top:34px;
+    font-size:28px;
+    font-weight:500;
+}
+
+p{
+    margin:14px 0;
+}
+
+.footer{
+    margin-top:80px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
