@@ -93,26 +93,34 @@ h2{
 /* 人物导航 */
 
 .char-nav{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:18px;
     margin-top:30px;
 }
 
 .char-nav a{
-    display:inline-block;
-    padding:14px 22px;
+    display:block;
+    padding:18px 22px;
     text-decoration:none;
     color:#e6e6e6;
 
-    background:rgba(255,255,255,0.08);
-    border-radius:12px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:14px;
 
     backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+
+    transition:0.2s ease;
+    font-size:18px;
+    letter-spacing:1px;
 }
 
 .char-nav a:hover{
-    background:rgba(255,255,255,0.16);
+    background:rgba(255,255,255,0.12);
+    border-color:rgba(255,255,255,0.22);
+    transform:translateY(-2px);
 }
 
 /* footer */
