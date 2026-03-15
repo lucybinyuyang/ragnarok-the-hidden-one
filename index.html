@@ -10,7 +10,14 @@
 <style>
 
 body{
-    background-color:#0f0f14;
+    background:
+    linear-gradient(rgba(10,10,15,0.65),rgba(10,10,15,0.65)),
+    url("images/main-background.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
     color:#e6e6e6;
     font-family:"Noto Serif SC",serif;
     margin:40px;
@@ -27,7 +34,7 @@ h1{
 .subtitle{
     text-align:center;
     color:#aaa;
-    margin-bottom:50px;
+    margin-bottom:60px;
     font-family:"Bonheur Royale",cursive;
     font-size:40px;
 }
@@ -41,6 +48,16 @@ h2{
 .section{
     max-width:850px;
     margin:auto;
+
+    background:rgba(15,15,20,0.65);
+    padding:50px;
+
+    border-radius:14px;
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    box-shadow:0 0 25px rgba(0,0,0,0.4);
 }
 
 .footer{
