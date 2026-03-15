@@ -8,18 +8,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Bonheur+Royale&display=swap" rel="stylesheet">
 
 <style>
+
 body{
     background:
     linear-gradient(rgba(10,10,15,0.65),rgba(10,10,15,0.65)),
     url("images/main-background.webp");
+
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
+
     color:#e6e6e6;
     font-family:"Noto Serif SC",serif;
     margin:40px;
     line-height:1.7;
 }
+
+/* 顶部导航 */
 
 .topnav{
     max-width:900px;
@@ -35,6 +40,7 @@ body{
     text-decoration:none;
     background:rgba(255,255,255,0.08);
     border-radius:999px;
+
     backdrop-filter:blur(6px);
     -webkit-backdrop-filter:blur(6px);
 }
@@ -43,28 +49,38 @@ body{
     background:rgba(255,255,255,0.16);
 }
 
+/* 标题 */
+
 h1{
-    text-align:center;
     font-size:44px;
+    text-align:center;
     margin-bottom:10px;
 }
+
+/* 副标题 */
 
 .subtitle{
     text-align:center;
     color:#aaa;
-    margin-bottom:50px;
+    margin-bottom:60px;
     font-family:"Bonheur Royale",cursive;
     font-size:40px;
 }
 
+/* 内容区域 */
+
 .section{
     max-width:900px;
     margin:auto;
+
     background:rgba(15,15,20,0.65);
     padding:50px;
+
     border-radius:14px;
+
     backdrop-filter:blur(8px);
     -webkit-backdrop-filter:blur(8px);
+
     box-shadow:0 0 25px rgba(0,0,0,0.4);
 }
 
@@ -74,11 +90,13 @@ h2{
     margin-top:0;
 }
 
+/* 人物导航 */
+
 .char-nav{
     display:flex;
     flex-wrap:wrap;
     gap:14px;
-    margin-top:24px;
+    margin-top:30px;
 }
 
 .char-nav a{
@@ -86,9 +104,18 @@ h2{
     padding:14px 22px;
     text-decoration:none;
     color:#e6e6e6;
+
     background:rgba(255,255,255,0.08);
     border-radius:12px;
+
+    backdrop-filter:blur(6px);
 }
+
+.char-nav a:hover{
+    background:rgba(255,255,255,0.16);
+}
+
+/* footer */
 
 .footer{
     margin-top:80px;
@@ -96,10 +123,13 @@ h2{
     color:#777;
     font-size:14px;
 }
+
 </style>
 </head>
 
 <body>
+
+<!-- 主导航 -->
 
 <div class="topnav">
     <a href="index.html">首页</a>
@@ -113,14 +143,21 @@ Characters
 </p>
 
 <div class="section">
-    <h2>角色目录</h2>
 
-    <div class="char-nav">
-        <a href="characters/selene.html">塞勒涅（Selene）</a>
-        <a href="characters/ophanel.html">奥法涅尔（Ophaniel）</a>
-        <a href="characters/beelzebub.html">别西卜（Beelzebub）</a>
-        <a href="characters/qin.html">嬴政（Qin Shi Huang）</a>
-    </div>
+<h2>角色目录</h2>
+
+<div class="char-nav">
+
+<a href="characters/塞勒涅.html">塞勒涅（Selene）</a>
+
+<a href="characters/奥法涅尔.html">奥法涅尔（Ophaniel）</a>
+
+<a href="characters/别西卜.html">别西卜（Beelzebub）</a>
+
+<a href="characters/嬴政.html">嬴政（Qin Shi Huang）</a>
+
+</div>
+
 </div>
 
 <div class="footer">
@@ -128,4 +165,5 @@ Ragnarok: The Hidden One Project
 </div>
 
 </body>
+
 </html>
