@@ -675,6 +675,11 @@ display:flex;
 flex-direction:column;
 gap:6px;
 margin-bottom:18px;
+
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
 }
 
 .archive-meta-block b{
@@ -687,4 +692,9 @@ margin-top:20px;
 font-size:14px;
 opacity:0.75;
 letter-spacing:1px;
+
+text-align:center;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
 }
