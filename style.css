@@ -318,13 +318,12 @@ letter-spacing:2px;
 .topnav{
 flex-wrap:wrap;
 justify-content:center;
-gap:14px 12px;
-margin-bottom:24px;
 }
 
 .topnav a{
 font-size:14px;
-padding:8px 14px;
+padding:6px 12px;
+margin:6px 6px; 
 }
 
 /* 人物子导航 */
