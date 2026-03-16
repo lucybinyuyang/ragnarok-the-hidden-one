@@ -562,3 +562,99 @@ color:#ffb0b0;
 .tag-wrap{
 text-align:center;
 }
+
+/* ===== Hidden Tales Archive ===== */
+
+.archive-list{
+display:flex;
+flex-direction:column;
+gap:16px;
+margin-top:10px;
+}
+
+.archive-item{
+display:grid;
+grid-template-columns:140px 1fr 28px;
+align-items:center;
+gap:18px;
+
+padding:20px 22px;
+
+text-decoration:none;
+color:#e6e6e6;
+
+background:rgba(18,18,24,0.72);
+border:1px solid rgba(255,255,255,0.10);
+border-radius:16px;
+
+transition:0.28s ease;
+backdrop-filter:blur(6px);
+-webkit-backdrop-filter:blur(6px);
+}
+
+.archive-item:hover{
+background:rgba(24,24,32,0.85);
+border-color:rgba(255,215,120,0.30);
+box-shadow:0 8px 26px rgba(0,0,0,0.35);
+transform:translateX(6px);
+}
+
+.archive-meta{
+font-size:14px;
+letter-spacing:2px;
+text-transform:uppercase;
+color:#f1e2b8;
+opacity:0.9;
+}
+
+.archive-main{
+min-width:0;
+}
+
+.archive-title{
+font-size:22px;
+line-height:1.25;
+margin-bottom:4px;
+}
+
+.archive-desc{
+font-size:14px;
+color:#aaa;
+line-height:1.5;
+}
+
+.archive-arrow{
+font-size:26px;
+text-align:right;
+color:#aaa;
+transition:0.28s ease;
+}
+
+.archive-item:hover .archive-arrow{
+color:#ffe8a3;
+transform:translateX(4px);
+}
+
+/* 手机端 */
+
+@media (max-width:768px){
+
+.archive-item{
+grid-template-columns:1fr;
+gap:8px;
+padding:18px 18px;
+}
+
+.archive-meta{
+font-size:13px;
+}
+
+.archive-title{
+font-size:20px;
+}
+
+.archive-arrow{
+display:none;
+}
+
+}
