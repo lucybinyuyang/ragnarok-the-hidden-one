@@ -304,11 +304,12 @@ object-position:center 45%;
 
 h1{
 font-size:32px;
+margin-top:40px;
 line-height:1.1;
 }
 
 .subtitle{
-font-size:16px;
+font-size:18px;
 letter-spacing:2px;
 }
 
@@ -316,12 +317,14 @@ letter-spacing:2px;
 
 .topnav{
 flex-wrap:wrap;
-gap:6px;
+justify-content:center;
+gap:14px 12px;
+margin-bottom:24px;
 }
 
 .topnav a{
 font-size:14px;
-padding:6px 10px;
+padding:8px 14px;
 }
 
 /* 人物子导航 */
