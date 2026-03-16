@@ -113,7 +113,7 @@ h1{
 h2{
     border-bottom:1px solid #444;
     padding-bottom:6px;
-    margin-top:34px;
+    margin-top:18px;
     font-size:24px;
     font-weight:500;
 }
@@ -170,7 +170,7 @@ p{
     display:block;
 
     object-fit:cover;
-    object-position:center 20%;
+    object-position:center 8%;
 
 }
 
@@ -181,23 +181,22 @@ p{
 .character-info{
     background:rgba(18,18,24,0.75);
     border-radius:16px;
-    padding:30px 32px;
+    padding:22px 28px;
 
     border:1px solid rgba(255,255,255,0.08);
 
     animation:cardGlow 6s ease-in-out infinite;
 
     font-size:15px;
-    line-height:1.9;
+    line-height:1.95;
 }
-
 
 /* 资料卡标题 */
 
-.character-info h3{
+.character-info h2{
 
     margin-top:0;
-    margin-bottom:18px;
+    margin-bottom:12px;
 
     font-size:26px;
     font-weight:500;
@@ -206,9 +205,8 @@ p{
 
     border-bottom:1px solid rgba(255,255,255,0.15);
 
-    padding-bottom:10px;
+    padding-bottom:8px;
 }
-
 
 /* 每一行资料 */
 
