@@ -132,6 +132,7 @@ function createGate() {
   `;
 
   document.body.appendChild(overlay);
+  document.body.style.overflow = "hidden";
 
   const input = document.getElementById("auth-password");
   const btn = document.getElementById("auth-submit");
@@ -142,6 +143,7 @@ function createGate() {
       localStorage.setItem(AUTH_KEY, "true");
       refreshAuthTime();
       overlay.remove();
+      document.body.style.overflow = "";
     } else {
       error.textContent = "密码错误";
       input.value = "";
