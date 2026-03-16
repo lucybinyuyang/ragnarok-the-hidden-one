@@ -165,7 +165,7 @@ p{
     display:block;
 
     object-fit:cover;
-    object-position:center 8%;
+    object-position:center top;
 }
 
 /* ===== 资料卡 ===== */
