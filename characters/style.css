@@ -209,6 +209,15 @@ p{
         margin:20px;
     }
 
+    .section{
+        padding:24px 26px 30px 26px;
+        font-size:15px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
     .character-header{
         display:grid;
         grid-template-columns:1fr;
@@ -241,6 +250,7 @@ p{
     .subtitle{
         font-size:30px;
         margin-bottom:24px;
+        white-space:nowrap;
     }
 
     .subtitle:before,
