@@ -1,9 +1,15 @@
 body{
+    margin:0;
+    padding:0;
+    background:#05060b;
+}
+body{
     color:#e6e6e6;
     font-family:"Noto Serif SC",serif;
-    margin:40px;
     line-height:1.9;
     position:relative;
+    padding:40px;
+    box-sizing:border-box;
 }
 
 body::before{
@@ -215,7 +221,7 @@ p{
 @media (max-width:820px){
 
    body{
-        margin:20px;
+        padding:20px;
     }
 
     body::before{
