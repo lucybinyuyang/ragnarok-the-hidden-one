@@ -1,0 +1,8 @@
+<a href="record_01.html" class="archive-item">
+    <div class="archive-meta">Record 001</div>
+    <div class="archive-main">
+        <div class="archive-title">Untitled Entry</div>
+        <div class="archive-desc">Click to open archive entry.</div>
+    </div>
+    <div class="archive-arrow">›</div>
+</a>
