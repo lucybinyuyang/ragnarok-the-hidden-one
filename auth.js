@@ -28,19 +28,22 @@ function clearAuth() {
 function createGate() {
   const style = document.createElement("style");
   style.textContent = `
-    #auth-overlay{
-      position:fixed;
-      inset:0;
-      z-index:999999;
-      background:
-        linear-gradient(rgba(10,10,15,0.82), rgba(10,10,15,0.82)),
-        radial-gradient(circle at top, rgba(255,255,255,0.05), transparent 40%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-      box-sizing:border-box;
-    }
+   #auth-overlay{
+  position:fixed;
+  inset:0;
+  z-index:999999;
+
+  background:rgba(6,6,10,0.92);
+
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  box-sizing:border-box;
+}
 
     #auth-box{
       width:100%;
