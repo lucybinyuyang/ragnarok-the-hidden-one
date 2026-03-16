@@ -153,9 +153,9 @@ p{
 
     border:1px solid rgba(255,255,255,0.10);
 
-    animation:cardGlow 6s ease-in-out infinite;
+    animation:cardGlow 8s ease-in-out infinite;
 
-    min-height:600px;
+    aspect-ratio:3/4;
 }
 
 
@@ -164,18 +164,14 @@ p{
 
 .character-art img{
 
-    position:relative;
-    z-index:1;
-
     width:100%;
     height:100%;
 
     display:block;
 
-    border-radius:12px;
-
     object-fit:cover;
-    object-position:center top;
+    object-position:center 20%;
+
 }
 
 
@@ -203,7 +199,7 @@ p{
     margin-top:0;
     margin-bottom:18px;
 
-    font-size:24px;
+    font-size:26px;
     font-weight:500;
 
     letter-spacing:1px;
@@ -271,4 +267,33 @@ box-shadow:
 inset 0 0 16px rgba(255,245,220,0.02);
 }
 
+}
+
+@keyframes abyssGlow{
+
+0%{
+box-shadow:
+0 0 26px rgba(160,120,255,0.18),
+0 0 60px rgba(160,120,255,0.08),
+inset 0 0 18px rgba(200,180,255,0.05);
+}
+
+50%{
+box-shadow:
+0 0 40px rgba(170,130,255,0.38),
+0 0 90px rgba(170,130,255,0.18),
+inset 0 0 26px rgba(210,190,255,0.10);
+}
+
+100%{
+box-shadow:
+0 0 26px rgba(160,120,255,0.18),
+0 0 60px rgba(160,120,255,0.08),
+inset 0 0 18px rgba(200,180,255,0.05);
+}
+
+}
+
+.beel-card{
+animation:abyssGlow 8s ease-in-out infinite;
 }
