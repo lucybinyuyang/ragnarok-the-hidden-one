@@ -303,15 +303,34 @@ object-position:center 45%;
 }
 
 h1{
-font-size:42px;
-letter-spacing:2px;
+font-size:32px;
+line-height:1.1;
 }
 
 .subtitle{
-font-size:30px;
-margin-bottom:24px;
-white-space:nowrap;
+font-size:16px;
+letter-spacing:2px;
 }
+
+/* 顶部导航 */
+
+.topnav{
+flex-wrap:wrap;
+gap:6px;
+}
+
+.topnav a{
+font-size:14px;
+padding:6px 10px;
+}
+
+/* 人物子导航 */
+
+.subnav a{
+font-size:13px;
+padding:6px 8px;
+}
+
 
 .subtitle:before,
 .subtitle:after{
