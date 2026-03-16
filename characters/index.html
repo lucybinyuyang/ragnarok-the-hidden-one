@@ -2,147 +2,37 @@
 <html>
 
 <head>
+
 <meta charset="UTF-8">
-<title>人物 (Characters)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>人物 | Ragnarok: The Hidden One</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Bonheur+Royale&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet" href="../style.css">
 
-body{
-    background:
-    linear-gradient(rgba(10,10,15,0.65),rgba(10,10,15,0.65)),
-    url("images/main-background.webp");
-
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
-    color:#e6e6e6;
-    font-family:"Noto Serif SC",serif;
-    margin:40px;
-    line-height:1.7;
-}
-
-/* 顶部导航 */
-
-.topnav{
-    max-width:900px;
-    margin:0 auto 30px auto;
-    text-align:center;
-}
-
-.topnav a{
-    display:inline-block;
-    margin:0 10px;
-    padding:10px 22px;
-    color:#e6e6e6;
-    text-decoration:none;
-    background:rgba(255,255,255,0.08);
-    border-radius:999px;
-
-    backdrop-filter:blur(6px);
-    -webkit-backdrop-filter:blur(6px);
-}
-
-.topnav a.active{
-    background:rgba(255,255,255,0.16);
-}
-
-/* 标题 */
-
-h1{
-    font-size:60px;
-    text-align:center;
-    margin-bottom:10px;
-}
-
-/* 副标题 */
-
-.subtitle{
-    text-align:center;
-    color:#aaa;
-    margin-bottom:60px;
-    font-family:"Bonheur Royale",cursive;
-    font-size:50px;
-}
-
-/* 内容区域 */
-
-.section{
-    max-width:900px;
-    margin:auto;
-
-    background:rgba(15,15,20,0.65);
-    padding:50px;
-
-    border-radius:14px;
-
-    backdrop-filter:blur(8px);
-    -webkit-backdrop-filter:blur(8px);
-
-    box-shadow:0 0 25px rgba(0,0,0,0.4);
-}
-
-h2{
-    border-bottom:1px solid #444;
-    padding-bottom:6px;
-    margin-top:0;
-}
-
-/* 人物导航 */
-
-.char-nav{
-    display:grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
-    gap:18px;
-    margin-top:30px;
-}
-
-.char-nav a{
-    display:block;
-    padding:18px 22px;
-    text-decoration:none;
-    color:#e6e6e6;
-
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.12);
-    border-radius:14px;
-
-    backdrop-filter:blur(6px);
-    -webkit-backdrop-filter:blur(6px);
-
-    transition:0.2s ease;
-    font-size:18px;
-    letter-spacing:1px;
-}
-
-.char-nav a:hover{
-    background:rgba(255,255,255,0.12);
-    border-color:rgba(255,255,255,0.22);
-    transform:translateY(-2px);
-}
-
-/* footer */
-
-.footer{
-    margin-top:80px;
-    text-align:center;
-    color:#777;
-    font-size:14px;
-}
-
-</style>
 </head>
+
 
 <body>
 
 <!-- 主导航 -->
 
 <div class="topnav">
-    <a href="index.html">首页</a>
-    <a href="characters.html" class="active">人物</a>
+
+<a href="../index.html">首页</a>
+
+<a href="../ragnarok/">诸神黄昏</a>
+
+<a href="../characters/" class="active">人物</a>
+
+<a href="../records/">瓦尔哈拉秘闻录</a>
+
+<a href="../timeline_records/">命运轨迹</a>
+
 </div>
+
 
 <h1>人物</h1>
 
@@ -150,27 +40,77 @@ h2{
 Characters
 </p>
 
+
 <div class="section">
 
-<h2>角色目录</h2>
+<div class="character-grid">
 
-<div class="char-nav">
 
-<a href="characters/塞勒涅.html">塞勒涅（Selene）</a>
+<!-- 奥法 -->
 
-<a href="characters/奥法涅尔.html">奥法涅尔（Ophaniel）</a>
+<a href="奥法涅尔.html" class="character-card ophan-card">
 
-<a href="characters/别西卜.html">别西卜（Beelzebub）</a>
+<div class="char-image">
+<img src="人物立绘/奥法涅尔_人物立绘.png">
+</div>
 
-<a href="characters/嬴政.html">嬴政（Qin Shi Huang）</a>
+<h3>奥法涅尔</h3>
+<p>命运之神</p>
+
+</a>
+
+
+<!-- 塞勒涅 -->
+
+<a href="塞勒涅.html" class="character-card selene-card">
+
+<div class="char-image">
+<img src="人物立绘/塞勒涅_人物立绘.jpg">
+</div>
+
+<h3>塞勒涅</h3>
+<p>月之女神</p>
+
+</a>
+
+
+<!-- 别西卜 -->
+
+<a href="别西卜.html" class="character-card beel-card">
+
+<div class="char-image">
+<img src="人物立绘/别西卜_人物立绘.jpg">
+</div>
+
+<h3>别西卜</h3>
+<p>被诅咒的苍蝇王</p>
+
+</a>
+
+
+<!-- 嬴政 -->
+
+<a href="嬴政.html" class="character-card qin-card">
+
+<div class="char-image">
+<img src="人物立绘/嬴政_人物立绘.jpg">
+</div>
+
+<h3>嬴政</h3>
+<p>起始之王</p>
+
+</a>
+
 
 </div>
 
 </div>
+
 
 <div class="footer">
 Ragnarok: The Hidden One Project
 </div>
+
 
 </body>
 
