@@ -331,7 +331,37 @@ inset 0 0 18px rgba(200,180,255,0.05);
 }
 
 }
-
 .beel-card{
 animation:abyssGlow 8s ease-in-out infinite;
+}
+
+/* ===== 嬴政红色帝王光 ===== */
+
+.qin-card{
+animation:qinGlow 8s ease-in-out infinite;
+}
+
+@keyframes qinGlow{
+
+0%{
+box-shadow:
+0 0 30px rgba(220,60,60,0.25),
+0 0 60px rgba(200,40,40,0.15),
+inset 0 0 18px rgba(255,100,100,0.06);
+}
+
+50%{
+box-shadow:
+0 0 50px rgba(255,80,80,0.35),
+0 0 110px rgba(220,60,60,0.25),
+inset 0 0 28px rgba(255,120,120,0.12);
+}
+
+100%{
+box-shadow:
+0 0 30px rgba(220,60,60,0.25),
+0 0 60px rgba(200,40,40,0.15),
+inset 0 0 18px rgba(255,100,100,0.06);
+}
+
 }
