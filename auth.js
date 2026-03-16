@@ -28,15 +28,15 @@ function clearAuth() {
 function createGate() {
   const style = document.createElement("style");
   style.textContent = `
-   #auth-overlay{
+#auth-overlay{
   position:fixed;
   inset:0;
   z-index:999999;
 
-  background:rgba(6,6,10,0.92);
+  background:rgba(20,20,30,0.35);
 
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+  backdrop-filter:blur(18px) saturate(120%);
+  -webkit-backdrop-filter:blur(18px) saturate(120%);
 
   display:flex;
   align-items:center;
