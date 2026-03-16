@@ -595,8 +595,8 @@ backdrop-filter:blur(6px);
 .archive-item:hover{
 background:rgba(24,24,32,0.85);
 border-color:rgba(255,215,120,0.30);
-box-shadow:0 8px 26px rgba(0,0,0,0.35);
-transform:translateX(6px);
+box-shadow:0 8px 20px rgba(0,0,0,0.28);
+transform:translateX(2px);
 }
 
 .archive-meta{
