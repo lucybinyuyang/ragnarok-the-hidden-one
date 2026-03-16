@@ -698,3 +698,60 @@ max-width:700px;
 margin-left:auto;
 margin-right:auto;
 }
+
+/* ===== Ragnarok / Encyclopedia List ===== */
+
+.lore-list{
+display:flex;
+flex-direction:column;
+gap:14px;
+margin-top:6px;
+}
+
+.lore-item{
+display:block;
+text-decoration:none;
+color:inherit;
+
+padding:18px 20px;
+
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.10);
+border-radius:14px;
+
+transition:0.22s ease;
+}
+
+.lore-item:hover{
+background:rgba(255,255,255,0.08);
+border-color:rgba(255,255,255,0.18);
+transform:translateY(-1px);
+}
+
+.lore-title{
+font-size:22px;
+line-height:1.3;
+margin-bottom:6px;
+}
+
+.lore-desc{
+font-size:15px;
+line-height:1.65;
+color:#b8b8b8;
+}
+
+@media (max-width:768px){
+
+.lore-item{
+padding:16px 16px;
+}
+
+.lore-title{
+font-size:20px;
+}
+
+.lore-desc{
+font-size:14px;
+}
+
+}
