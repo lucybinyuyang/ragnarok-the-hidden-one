@@ -1,15 +1,24 @@
 body{
-    background:
-    linear-gradient(rgba(10,10,15,0.65),rgba(10,10,15,0.65)),
-    url("../images/main-background.webp");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
     color:#e6e6e6;
     font-family:"Noto Serif SC",serif;
     margin:40px;
     line-height:1.9;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+
+    background:
+    linear-gradient(rgba(10,10,15,0.65),rgba(10,10,15,0.65)),
+    url("../images/main-background.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .topnav{
@@ -205,8 +214,12 @@ p{
 
 @media (max-width:820px){
 
-    body{
+   body{
         margin:20px;
+    }
+
+    body::before{
+        background-position:center 20%;
     }
 
     .section{
