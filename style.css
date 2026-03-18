@@ -755,3 +755,11 @@ font-size:14px;
 }
 
 }
+/* 情报列表 */
+
+.info-list p{
+margin:6px 0;
+line-height:1.6;
+font-size:15px;
+color:#cfcfcf;
+}
