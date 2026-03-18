@@ -763,6 +763,7 @@ line-height:1.6;
 font-size:15px;
 color:#cfcfcf;
 }
+
 /* ===== Timeline Records ===== */
 
 .timeline-master{
@@ -771,7 +772,7 @@ position:relative;
 
 margin-top:8px;
 
-padding-left:34px;
+padding-left:38px;
 
 }
 
@@ -781,7 +782,7 @@ content:"";
 
 position:absolute;
 
-left:10px;
+left:12px;
 
 top:0;
 
@@ -789,11 +790,24 @@ bottom:0;
 
 width:2px;
 
-background:rgba(255,255,255,0.14);
+background:linear-gradient(
+
+to bottom,
+
+rgba(255,255,255,0.16),
+
+rgba(255,255,255,0.10),
+
+rgba(255,255,255,0.16)
+
+);
+
+box-shadow:0 0 10px rgba(200,200,255,0.06);
 
 }
 
-/* 大 section：早年经历 / 诸神黄昏 */
+
+/* ===== 大 section：早年经历 / 诸神黄昏 ===== */
 
 .timeline-section-title{
 
@@ -801,11 +815,13 @@ position:relative;
 
 padding-left:28px;
 
-margin:0 0 18px 0;
+margin:0 0 16px 0;
 
-font-size:32px;
+font-size:28px;
 
-line-height:1.3;
+line-height:1.28;
+
+font-weight:600;
 
 color:#f1e2b8;
 
@@ -819,9 +835,9 @@ content:"";
 
 position:absolute;
 
-left:-2px;
+left:-6px;
 
-top:11px;
+top:10px;
 
 width:20px;
 
@@ -831,13 +847,20 @@ border-radius:999px;
 
 background:rgba(255,215,120,0.16);
 
-border:1px solid rgba(255,215,120,0.50);
+border:1px solid rgba(255,215,120,0.58);
 
-box-shadow:0 0 14px rgba(255,215,120,0.14);
+box-shadow:
+
+0 0 10px rgba(255,215,120,0.18),
+
+0 0 20px rgba(255,215,120,0.10);
+
+animation:timelinePulseGold 2.6s ease-in-out infinite;
 
 }
 
-/* Round 1~13 */
+
+/* ===== Round 1-13 ===== */
 
 .timeline-round-title{
 
@@ -845,13 +868,15 @@ position:relative;
 
 padding-left:28px;
 
-margin:20px 0 10px 0;
+margin:18px 0 8px 0;
 
-font-size:26px;
+font-size:24px;
 
-line-height:1.35;
+line-height:1.3;
 
-color:#e9e0c2;
+font-weight:600;
+
+color:#ece6cf;
 
 letter-spacing:0.5px;
 
@@ -863,9 +888,9 @@ content:"";
 
 position:absolute;
 
-left:0;
+left:-1px;
 
-top:12px;
+top:11px;
 
 width:14px;
 
@@ -873,15 +898,22 @@ height:14px;
 
 border-radius:999px;
 
-background:rgba(220,220,255,0.16);
+background:rgba(210,225,255,0.16);
 
-border:1px solid rgba(220,220,255,0.42);
+border:1px solid rgba(220,235,255,0.52);
 
-box-shadow:0 0 10px rgba(220,220,255,0.10);
+box-shadow:
+
+0 0 10px rgba(200,220,255,0.14),
+
+0 0 18px rgba(200,220,255,0.08);
+
+animation:timelinePulseBlue 2.8s ease-in-out infinite;
 
 }
 
-/* 具体节点 */
+
+/* ===== 普通事件节点 ===== */
 
 .timeline-entry{
 
@@ -889,7 +921,9 @@ position:relative;
 
 display:block;
 
-padding:8px 0 8px 28px;
+padding:6px 0 6px 28px;
+
+margin:0 0 2px 0;
 
 text-decoration:none;
 
@@ -901,9 +935,9 @@ color:inherit;
 
 position:absolute;
 
-left:3px;
+left:2px;
 
-top:17px;
+top:15px;
 
 width:9px;
 
@@ -911,21 +945,27 @@ height:9px;
 
 border-radius:999px;
 
-background:rgba(190,190,255,0.16);
+background:rgba(220,230,255,0.14);
 
-border:1px solid rgba(220,220,255,0.36);
+border:1px solid rgba(220,235,255,0.40);
 
-box-shadow:0 0 8px rgba(200,200,255,0.08);
+box-shadow:
+
+0 0 8px rgba(200,220,255,0.08),
+
+0 0 14px rgba(200,220,255,0.04);
+
+animation:timelinePulseSoft 3s ease-in-out infinite;
 
 }
 
 .timeline-entry-text{
 
-font-size:18px;
+font-size:16px;
 
 line-height:1.65;
 
-color:#d5d5d5;
+color:#d4d4d4;
 
 transition:0.2s ease;
 
@@ -937,31 +977,163 @@ color:#ffffff;
 
 transform:translateX(2px);
 
+text-shadow:0 0 8px rgba(255,255,255,0.08);
+
 }
 
-/* 手机端 */
+
+/* ===== 呼吸发光 ===== */
+
+@keyframes timelinePulseGold{
+
+0%{
+
+box-shadow:
+
+0 0 8px rgba(255,215,120,0.16),
+
+0 0 16px rgba(255,215,120,0.08);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 13px rgba(255,215,120,0.30),
+
+0 0 26px rgba(255,215,120,0.14);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 8px rgba(255,215,120,0.16),
+
+0 0 16px rgba(255,215,120,0.08);
+
+}
+
+}
+
+@keyframes timelinePulseBlue{
+
+0%{
+
+box-shadow:
+
+0 0 8px rgba(200,220,255,0.14),
+
+0 0 16px rgba(200,220,255,0.07);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 12px rgba(210,230,255,0.24),
+
+0 0 24px rgba(210,230,255,0.12);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 8px rgba(200,220,255,0.14),
+
+0 0 16px rgba(200,220,255,0.07);
+
+}
+
+}
+
+@keyframes timelinePulseSoft{
+
+0%{
+
+opacity:0.78;
+
+box-shadow:0 0 6px rgba(200,220,255,0.06);
+
+}
+
+50%{
+
+opacity:1;
+
+box-shadow:0 0 10px rgba(200,220,255,0.14);
+
+}
+
+100%{
+
+opacity:0.78;
+
+box-shadow:0 0 6px rgba(200,220,255,0.06);
+
+}
+
+}
+
+
+/* ===== 手机端 ===== */
 
 @media (max-width:768px){
 
 .timeline-master{
 
-padding-left:28px;
+padding-left:30px;
+
+}
+
+.timeline-master::before{
+
+left:10px;
 
 }
 
 .timeline-section-title{
 
-font-size:26px;
+font-size:24px;
 
 padding-left:24px;
 
 }
 
+.timeline-section-title::before{
+
+left:-5px;
+
+width:18px;
+
+height:18px;
+
+top:9px;
+
+}
+
 .timeline-round-title{
 
-font-size:22px;
+font-size:21px;
 
 padding-left:24px;
+
+}
+
+.timeline-round-title::before{
+
+left:0;
+
+width:12px;
+
+height:12px;
+
+top:10px;
 
 }
 
@@ -971,9 +1143,21 @@ padding-left:24px;
 
 }
 
+.timeline-point{
+
+left:3px;
+
+top:14px;
+
+width:8px;
+
+height:8px;
+
+}
+
 .timeline-entry-text{
 
-font-size:16px;
+font-size:15px;
 
 }
 
