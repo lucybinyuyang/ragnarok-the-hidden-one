@@ -768,62 +768,19 @@ color:#cfcfcf;
 
 .timeline-master{
 
-position:relative;
-
 margin-top:14px;
 
-padding-left:42px;
-
 }
 
-.timeline-master::before{
-
-content:"";
-
-position:absolute;
-
-left:12px;
-
-top:0;
-
-bottom:0;
-
-width:2px;
-
-background:linear-gradient(
-
-to bottom,
-
-rgba(255,255,255,0.08) 0%,
-
-rgba(255,255,255,0.18) 12%,
-
-rgba(255,255,255,0.10) 50%,
-
-rgba(255,255,255,0.18) 88%,
-
-rgba(255,255,255,0.08) 100%
-
-);
-
-box-shadow:
-
-0 0 10px rgba(200,210,255,0.05),
-
-0 0 18px rgba(200,210,255,0.03);
-
-}
-
-
-/* ===== 大 section：早年经历 / 诸神黄昏 ===== */
+/* Section 标题：早年经历 / 诸神黄昏 */
 
 .timeline-section-title{
 
 position:relative;
 
-padding-left:34px;
+padding-left:52px;
 
-margin:0 0 22px 0;
+margin:0 0 20px 0;
 
 display:flex;
 
@@ -835,15 +792,81 @@ flex-wrap:wrap;
 
 }
 
-.timeline-section-title + .timeline-entry,
+/* 上半截线 */
 
-.timeline-section-title + .timeline-round-title{
+.timeline-section-title::before{
 
-margin-top:6px;
+content:"";
+
+position:absolute;
+
+left:16px;
+
+top:-36px;
+
+width:2px;
+
+height:36px;
+
+background:rgba(255,255,255,0.14);
+
+}
+
+/* 下半截线 */
+
+.timeline-section-title::after{
+
+content:"";
+
+position:absolute;
+
+left:16px;
+
+top:22px;
+
+width:2px;
+
+height:calc(100% + 18px);
+
+background:rgba(255,255,255,0.14);
+
+}
+
+/* section 的实心大点 */
+
+.timeline-section-title .timeline-cn::before{
+
+content:"";
+
+position:absolute;
+
+left:16px;
+
+top:10px;
+
+transform:translateX(-50%);
+
+width:18px;
+
+height:18px;
+
+border-radius:999px;
+
+background:#e6d39a;
+
+box-shadow:
+
+0 0 10px rgba(255,215,120,0.22),
+
+0 0 22px rgba(255,215,120,0.10);
+
+animation:timelinePulseGold 2.8s ease-in-out infinite;
 
 }
 
 .timeline-cn{
+
+position:relative;
 
 font-size:30px;
 
@@ -854,8 +877,6 @@ font-weight:600;
 color:#f1e2b8;
 
 letter-spacing:1px;
-
-text-shadow:0 0 10px rgba(255,235,180,0.05);
 
 }
 
@@ -875,48 +896,15 @@ transform:translateY(-2px);
 
 }
 
-.timeline-section-title::before{
-
-content:"";
-
-position:absolute;
-
-left:12px;
-
-top:12px;
-
-transform:translateX(-50%);
-
-width:22px;
-
-height:22px;
-
-border-radius:999px;
-
-background:rgba(255,215,120,0.15);
-
-border:1px solid rgba(255,215,120,0.65);
-
-box-shadow:
-
-0 0 10px rgba(255,215,120,0.18),
-
-0 0 22px rgba(255,215,120,0.10);
-
-animation:timelinePulseGold 2.8s ease-in-out infinite;
-
-}
-
-
-/* ===== Round 1-13 ===== */
+/* Round 标题 */
 
 .timeline-round-title{
 
 position:relative;
 
-padding-left:34px;
+padding-left:52px;
 
-margin:28px 0 8px 0;
+margin:26px 0 10px 0;
 
 font-size:21px;
 
@@ -928,9 +916,9 @@ color:#ece6cf;
 
 letter-spacing:0.4px;
 
-text-shadow:0 0 8px rgba(255,255,255,0.03);
-
 }
+
+/* 上半截线 */
 
 .timeline-round-title::before{
 
@@ -938,34 +926,59 @@ content:"";
 
 position:absolute;
 
-left:12px;
+left:16px;
 
-top:12px;
+top:-24px;
 
-transform:translateX(-50%);
+width:2px;
 
-width:15px;
+height:24px;
 
-height:15px;
-
-border-radius:999px;
-
-background:rgba(210,225,255,0.15);
-
-border:1px solid rgba(220,235,255,0.55);
-
-box-shadow:
-
-0 0 10px rgba(200,220,255,0.12),
-
-0 0 20px rgba(200,220,255,0.06);
-
-animation:timelinePulseBlue 3s ease-in-out infinite;
+background:rgba(255,255,255,0.14);
 
 }
 
+/* 下半截线 */
 
-/* ===== 普通事件节点 ===== */
+.timeline-round-title::after{
+
+content:"";
+
+position:absolute;
+
+left:16px;
+
+top:18px;
+
+width:2px;
+
+height:26px;
+
+background:rgba(255,255,255,0.14);
+
+}
+
+/* round 的点 */
+
+.timeline-round-title{
+
+background-image: radial-gradient(
+
+circle at 16px 12px,
+
+rgba(220,235,255,0.95) 0 6px,
+
+transparent 7px
+
+);
+
+background-repeat:no-repeat;
+
+filter:drop-shadow(0 0 10px rgba(210,230,255,0.18));
+
+}
+
+/* 普通事件节点 */
 
 .timeline-entry{
 
@@ -973,7 +986,7 @@ position:relative;
 
 display:block;
 
-padding:7px 0 7px 34px;
+padding:6px 0 6px 52px;
 
 margin:0 0 2px 0;
 
@@ -983,13 +996,55 @@ color:inherit;
 
 }
 
+/* 上半截线 */
+
+.timeline-entry::before{
+
+content:"";
+
+position:absolute;
+
+left:16px;
+
+top:-2px;
+
+width:2px;
+
+height:20px;
+
+background:rgba(255,255,255,0.14);
+
+}
+
+/* 下半截线 */
+
+.timeline-entry::after{
+
+content:"";
+
+position:absolute;
+
+left:16px;
+
+top:20px;
+
+width:2px;
+
+height:calc(100% - 18px);
+
+background:rgba(255,255,255,0.14);
+
+}
+
+/* 真正在线上的实心点 */
+
 .timeline-point{
 
 position:absolute;
 
-left:12px;
+left:16px;
 
-top:16px;
+top:14px;
 
 transform:translateX(-50%);
 
@@ -999,15 +1054,13 @@ height:9px;
 
 border-radius:999px;
 
-background:rgba(220,230,255,0.14);
-
-border:1px solid rgba(220,235,255,0.42);
+background:rgba(220,230,255,0.95);
 
 box-shadow:
 
-0 0 8px rgba(200,220,255,0.08),
+0 0 8px rgba(200,220,255,0.16),
 
-0 0 14px rgba(200,220,255,0.04);
+0 0 14px rgba(200,220,255,0.08);
 
 animation:timelinePulseSoft 3.2s ease-in-out infinite;
 
@@ -1035,17 +1088,23 @@ text-shadow:0 0 8px rgba(255,255,255,0.08);
 
 }
 
-
-/* ===== section 之间留白 ===== */
+/* section 之间留白 */
 
 .timeline-section-title:not(:first-child){
 
-margin-top:48px;
+margin-top:52px;
 
 }
 
+/* 最后一个 entry 不再往下延线 */
 
-/* ===== 呼吸发光 ===== */
+.timeline-master > .timeline-entry:last-child::after{
+
+display:none;
+
+}
+
+/* 发光 */
 
 @keyframes timelinePulseGold{
 
@@ -1053,7 +1112,7 @@ margin-top:48px;
 
 box-shadow:
 
-0 0 8px rgba(255,215,120,0.14),
+0 0 8px rgba(255,215,120,0.16),
 
 0 0 16px rgba(255,215,120,0.06);
 
@@ -1073,43 +1132,9 @@ box-shadow:
 
 box-shadow:
 
-0 0 8px rgba(255,215,120,0.14),
+0 0 8px rgba(255,215,120,0.16),
 
 0 0 16px rgba(255,215,120,0.06);
-
-}
-
-}
-
-@keyframes timelinePulseBlue{
-
-0%{
-
-box-shadow:
-
-0 0 8px rgba(200,220,255,0.12),
-
-0 0 16px rgba(200,220,255,0.05);
-
-}
-
-50%{
-
-box-shadow:
-
-0 0 12px rgba(210,230,255,0.22),
-
-0 0 24px rgba(210,230,255,0.10);
-
-}
-
-100%{
-
-box-shadow:
-
-0 0 8px rgba(200,220,255,0.12),
-
-0 0 16px rgba(200,220,255,0.05);
 
 }
 
@@ -1119,9 +1144,13 @@ box-shadow:
 
 0%{
 
-opacity:0.78;
+opacity:0.8;
 
-box-shadow:0 0 6px rgba(200,220,255,0.05);
+box-shadow:
+
+0 0 6px rgba(200,220,255,0.08),
+
+0 0 12px rgba(200,220,255,0.04);
 
 }
 
@@ -1129,44 +1158,67 @@ box-shadow:0 0 6px rgba(200,220,255,0.05);
 
 opacity:1;
 
-box-shadow:0 0 10px rgba(200,220,255,0.12);
+box-shadow:
+
+0 0 10px rgba(200,220,255,0.18),
+
+0 0 20px rgba(200,220,255,0.08);
 
 }
 
 100%{
 
-opacity:0.78;
+opacity:0.8;
 
-box-shadow:0 0 6px rgba(200,220,255,0.05);
+box-shadow:
+
+0 0 6px rgba(200,220,255,0.08),
+
+0 0 12px rgba(200,220,255,0.04);
 
 }
 
 }
 
-
-/* ===== 手机端 ===== */
+/* 手机端 */
 
 @media (max-width:768px){
 
-.timeline-master{
-
-padding-left:32px;
-
-}
-
-.timeline-master::before{
-
-left:10px;
-
-}
-
 .timeline-section-title{
 
-padding-left:26px;
+padding-left:42px;
 
 gap:10px;
 
-margin-bottom:18px;
+margin-bottom:16px;
+
+}
+
+.timeline-section-title::before,
+
+.timeline-section-title::after,
+
+.timeline-round-title::before,
+
+.timeline-round-title::after,
+
+.timeline-entry::before,
+
+.timeline-entry::after{
+
+left:12px;
+
+}
+
+.timeline-section-title .timeline-cn::before{
+
+left:12px;
+
+width:16px;
+
+height:16px;
+
+top:9px;
 
 }
 
@@ -1182,51 +1234,35 @@ font-size:22px;
 
 }
 
-.timeline-section-title::before{
-
-left:10px;
-
-width:18px;
-
-height:18px;
-
-top:9px;
-
-}
-
 .timeline-round-title{
 
-padding-left:26px;
+padding-left:42px;
 
 font-size:18px;
 
-margin-top:22px;
+background-image: radial-gradient(
 
-}
+circle at 12px 10px,
 
-.timeline-round-title::before{
+rgba(220,235,255,0.95) 0 5px,
 
-left:10px;
+transparent 6px
 
-width:12px;
-
-height:12px;
-
-top:10px;
+);
 
 }
 
 .timeline-entry{
 
-padding-left:26px;
+padding-left:42px;
 
 }
 
 .timeline-point{
 
-left:10px;
+left:12px;
 
-top:14px;
+top:13px;
 
 width:8px;
 
@@ -1244,7 +1280,7 @@ line-height:1.65;
 
 .timeline-section-title:not(:first-child){
 
-margin-top:40px;
+margin-top:42px;
 
 }
 
